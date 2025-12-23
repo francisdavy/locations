@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QR Location</title>
+</head>
+<body>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () 
+{
+  openMap();
+});
+
+function openMap() 
+{
+  const lat = 10.505775405244158;
+  const lng = 76.2459693711649;
+
+  if (/Android/i.test(navigator.userAgent)) 
+  {
+    window.location.href = `geo:${lat},${lng}?q=${lat},${lng}`;
+  } 
+  else 
+  {
+    window.location.href = `https://www.google.com/maps?q=${lat},${lng}`;
+  }
+}
+</script>
+
+</body>
+</html>
+
