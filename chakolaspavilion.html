@@ -16,14 +16,14 @@ function openMap()
   const lat = 10.505775405244158;
   const lng = 76.2459693711649;
 
-  if (/Android/i.test(navigator.userAgent)) 
-  {
-    window.location.href = `geo:${lat},${lng}?q=${lat},${lng}`;
-  } 
-  else 
-  {
+  // if (/Android/i.test(navigator.userAgent)) 
+  // {
+  //   window.location.href = `geo:${lat},${lng}?q=${lat},${lng}`;
+  // } 
+  // else 
+  // {
     window.location.href = `https://www.google.com/maps?q=${lat},${lng}`;
-  }
+  // }
 }
 </script>
 
